@@ -1,7 +1,12 @@
+"""
+    Flask-AceEditor
+    ~~~~~~~~~~~~~~~~~
+    :copyright: (c) 2022 by lrsgzs.
+"""
+
 from flask import *
 
 
-# create a aceeditor class
 class AceEditor(object):
     def __init__(self, app=None):
         if app is not None:
@@ -15,10 +20,10 @@ class AceEditor(object):
         app.jinja_env.globals["ace"] = self
         acebp = Blueprint('ace', __name__, static_folder="static", static_url_path="/ace" + app.static_url_path)
         app.register_blueprint(acebp)
-        self.done = (False, False)
 
     @staticmethod
     def load():
+        """Load ace.js and theme and ext。 | 加载ace.js和主题、扩展。"""
         jzs = ["ace.min.js",
                "mode-python.min.js",
                "theme-monokai.min.js",
@@ -40,6 +45,12 @@ class AceEditor(object):
 
     @staticmethod
     def create(name="code", code="print('helloworld')"):
+        """Create ace.js editor. | 创建ace.js编辑器。
+
+        :param name: form submitted field name | 表单提交的字段名字
+        :param code: init code | 初始代码
+        :return: use 'ace.js editor' code | 用'ace.js编辑器'的代码
+        """
         a = '<pre id="content" style="height:415px"></pre><textarea name="' + name + '" id="' + name + \
             '''" class="code">''' + code + '''</textarea><button onclick="ghzt()">白天/黑夜</button><script>
 var codek = document.getElementById("''' + name + '''");

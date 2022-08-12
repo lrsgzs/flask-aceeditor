@@ -1,3 +1,9 @@
+"""
+    Flask-AceEditor
+    ~~~~~~~~~~~~~~~~~
+    :copyright: (c) 2022 by lrsgzs.
+"""
+
 import os
 
 from setuptools import setup
