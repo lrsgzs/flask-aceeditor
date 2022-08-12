@@ -66,7 +66,8 @@ class AceEditor(object):
 });"""
         extsccode = ""
         for i in sel.exts:
-            extscode = 'ace.require("ace/ext/' + i +　'");\n'
+            extscode = extsccode + 'ace.require("ace/ext/' + i + '");\n'
+        
         if not self.done[1]:
             a = '<pre id="content" style="height:415px"></pre><textarea name="' + name + '" id="code" class="code">' + code + '</textarea>'
             b = '<script>var codek = document.getElementById("' + name + '''");
