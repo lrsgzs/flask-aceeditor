@@ -20,7 +20,7 @@ aceeditor = AceEditor(app)
 
 ```html
 ...
-{{ ace.load() }}<!--be sure to precede the code using the ace editor! ! ! -->
+{{ ace.load() }}<!-- be sure to precede the code using the ace editor! ! ! -->
 ...
 ````
 
@@ -54,7 +54,7 @@ aceeditor = AceEditor(app)
 
 ```html
 ...
-{{ ace.load() }}<!--一定要在使用ace编辑器的代码前面！！！-->
+{{ ace.load() }}<!-- 一定要在使用ace编辑器的代码前面！！！ -->
 ...
 ```
 
