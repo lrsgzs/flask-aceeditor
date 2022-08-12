@@ -22,8 +22,6 @@ aceeditor = AceEditor(app)
 ...
 {{ ace.load() }}<!--一定要在使用ace编辑器的代码前面！！！-->
 ...
-
-</html>
 ```
 
 #### 创建编辑器（有颜色变换按钮）
