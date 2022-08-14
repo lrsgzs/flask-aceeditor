@@ -37,7 +37,7 @@ class AceEditor(object):
         tp = ('<script src="', '"></script>')
         jzjbs = []
         for i in jzs:
-            jzjbs.append(tp[0] + url_for("ace.static", filenamee=i) + tp[1])
+            jzjbs.append(tp[0] + url_for("ace.static", filename=i) + tp[1])
         wq = ""
         for i in jzjbs:
             wq = wq + i + "\n"
