@@ -15,7 +15,7 @@ with open(os.path.join(basedir, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Flask-AceEditor',
-    version='1.0.6',
+    version='1.0.7',
     packages=['flask_aceeditor'],
     url='https://github.com/lrsgzs/flask-aceeitor',
     license='MIT',
